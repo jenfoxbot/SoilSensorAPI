@@ -13,7 +13,7 @@ npm start
 
 ## Change History
 
-This project uses [semvar](http://semvar.org/).
+This project uses [semantic versioning](http://semver.org/).
 
 ### v0.1.0 - tbd
 
