@@ -1,0 +1,36 @@
+{
+  "name": "SoilSensorAPI",
+  "version": "0.1.0",
+  "description": "A database and API for the Soil Sensor project.",
+  "main": "src/api.js",
+  "scripts": {
+    "start": "nodemon src/api.js",
+    "test": "mocha -w --reporter spec",
+    "testonce": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jenfoxbot/SoilSensorAPI.git"
+  },
+  "author": "",
+  "license": "Apache v2",
+  "bugs": {
+    "url": "https://github.com/jenfoxbot/SoilSensorAPI/issues"
+  },
+  "homepage": "https://github.com/jenfoxbot/SoilSensorAPI",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.4",
+    "mongoose": "^3.8.14",
+    "nodemon": "^1.2.0"
+  },
+  "devDependencies": {
+    "async": "^0.9.0",
+    "expect.js": "^0.3.1",
+    "mocha": "^1.20.1",
+    "supertest": "^0.13.0"
+  }
+}
