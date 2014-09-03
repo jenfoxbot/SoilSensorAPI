@@ -11,7 +11,7 @@ def RC_Analog(Pin):
     #Discharge capacitor
     GPIO.setup(14, GPIO.OUT)
     GPIO.output(14, GPIO.LOW)
-    time.sleep(1) #in seconds, originally 0.1.. (suspends execution)
+    time.sleep(0.1) #in seconds, suspends execution.
     GPIO.setup(14, GPIO.IN)
 #Count loops until voltage across capacitor reads high on GPIO
     while (GPIO.input(14)==GPIO.LOW):
@@ -39,7 +39,7 @@ while True:
             break
     time_end = time.time()
     if (counter >= 25 and (time_end - time_start) <= 60): # if you get 25 measurements that indicate dry soil in less than one minute, need to water
-        print('Not enough water for your plants to survive! Please water now.')
+        print('Not enough water for your plants to survive! Please water now.') #comment this out for testing
 #    else:
  #     print('Your plants are safe and healthy, yay!')
 
